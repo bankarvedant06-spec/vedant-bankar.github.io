@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Vedant Bankar | ENTC Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0f; /* dark tech background */
+      color: #e0e0e0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #001f3f, #0074D9); /* tech blue gradient */
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #FFD700; /* telecom gold */
+    }
+    .menu {
+      display: flex;
+      gap: 25px;
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .menu a:hover {
+      color: #00FF7F; /* neon green hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #0074D9, #FFD700);
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #FFD700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Card Grid */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #00FF7F;
+      box-shadow: 0 0 10px rgba(0,255,127,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0,255,127,0.7);
+    }
+    .card h3 {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #001f3f;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Vedant's Portfolio</div>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Hello, I'm Vedant Bankar</h1>
+    <p>ENTC Student | Tech Explorer | Innovator</p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Who I Am</h3>
+        <p>I am an Electronics & Telecommunication Engineering student passionate about embedded systems, communication networks, and signal processing.</p>
+      </div>
+      <div class="card">
+        <h3>My Goal</h3>
+        <p>To apply ENTC knowledge in real-world innovations and build impactful projects while developing leadership and management skills.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Education Section -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Secondary Education</h3>
+      <p>Kendriya Vidyalaya Army Area, Pune</p>
+      <p>Percentage: <strong>86%</strong></p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary Education</h3>
+      <p>Kendriya Vidyalaya Army Area, Pune</p>
+      <p>Percentage: <strong>73%</strong></p>
+    </div>
+    <div class="card">
+      <h3>Current Education</h3>
+      <p>FY B.Tech in Electronics & Telecommunication Engineering</p>
+      <p>MITAOE (MIT Academy of Engineering)</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card-container">
+      <div class="card"><h3>Programming</h3><p>Python, C/C++, MATLAB</p></div>
+      <div class="card"><h3>Hardware</h3><p>Arduino, Raspberry Pi, PCB Design</p></div>
+      <div class="card"><h3>Telecommunication</h3><p>Wireless Systems, IoT Basics, Signal Processing</p></div>
+      <div class="card"><h3>Soft Skills</h3><p>Communication, Leadership, Management, Quick Learning</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card"><h3>Embedded Systems Mini Project</h3><p>Simple automation project using Arduino and sensors.</p></div>
+      <div class="card"><h3>Communication Systems Experiment</h3><p>Basic modulation and demodulation techniques studied in lab.</p></div>
+      <div class="card"><h3>Signal Processing Assignment</h3><p>Exploring DSP algorithms with MATLAB for audio signals.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card-container">
+      <div class="card"><h3>Email</h3><p><a href="mailto:bankarvedant06@gmail.com" style="color:#00FF7F;">bankarvedant06@gmail.com</a></p></div>
+      <div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/vedant-bankar-ba4227382/" target="_blank" style="color:#00FF7F;">linkedin.com/in/vedant-bankar-ba4227382</a></p></div>
+      <div class="card"><h3>GitHub</h3><p><a href="https://github.com/vedant-bankar" target="_blank" style="color:#00FF7F;">github.com/vedant-bankar</a></p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Vedant Bankar | ENTC Portfolio</p>
+  </footer>
+
+</body>
+</html>
